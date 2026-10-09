@@ -20,7 +20,7 @@ buttons.forEach(function(button, index) {
         });
 
         //Show the selected product
-        products[index].style.display = "grid";
+        products[index].style.display = ("grid");
         products[index].classList.add("active");
 
         //highlight selected button
@@ -56,3 +56,29 @@ document.getElementById("game1").addEventListener("submit", function(event) {
         output.textContent = "Your Guess " + userGuess + ". Random Number " + randomNumber + ". Sorry, try again!";
     }
 }) 
+
+//CONTACT FORM
+const form = document.querySelector("#part5ish form");
+
+form.addEventListener("formbtn", function(event) {
+    event.preventDefault();
+
+    const firstname = document.getElementsById("fname").value;
+    const lastName = document.getElementById("lname").value;
+    const comment = document.getElementById("message");
+
+    const result = document.createElement("div");
+
+    result.innerHTML = ` 
+    <h3>Thank you for your feedback!</h3>
+    <p><strong>First name:</strong>${firstname}</p>
+    <p><strong>Last Name:</strong>${lastName}</p>
+    <p><strong>Contact Us</strong>${comment}</p>
+    `
+    ;
+
+    document.getElementById("part5ish").appendChild(result);
+
+    //rest form
+    form.reset(); 
+});
