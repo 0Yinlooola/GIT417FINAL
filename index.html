@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>GIT 417 FINAL</title>
+        <!--Connecting to CSS-->
+        <link rel="stylesheet" href="style.css">
+
+        <meta name="description" content="This page will display all that I have learned in class
+        Git417 by creating a single page site demonstrating 3 products to buy, a game and an online 
+        shopping example.">
+        <meta name="author" content="Oyinlola Haastrup">
+
+        <!--fonts-->
+        <link href="https://fonts.googleapis.com/css2?family=Gravitas+One&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&display=swap" rel="stylesheet"
+        >
+    </head>
+    <body>
+        <header>
+            <section id="topline">
+                <section id="headpic">
+                    <img src="Danessamainphoto.webp" alt="Danessa is posing." width="200" height="200">  
+                     <h1>Danessa Myricks</h1>
+                </section>
+        </header>        
+                <nav>
+                    <ul>
+                        <li><a href="#about">Who's Danessa</a></li>
+                        <li><a href="#topsellers">Top Sellers</a></li>
+                        <li><a href="#shop">Shop</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </nav>
+            </section>
+        <section class="full-page-image" id="modelof3">
+            <img src="modelof3.jpg" alt="3 models posing.">
+        </section>    
+        <main>
+            <section id="part1">
+                <img src="danessalaughing.jpg" alt="danes is laughing and posing" class="laugh">
+                <section id="part1ish">
+                    <h2>Who is Danessa Myricks</h2>
+                        <p> Danessa Myricks is a significant figure in the beauty industry, known for her 
+                            innovation towards makeup and her entrepreneurial spirit. Originally working in the 
+                            medical field, the single mother of two wanted a more flexible career to support her 
+                            children while still going after her dreams. With no formal training in makeup, she 
+                            educated herself through extensive research and practice and eventually created her 
+                            own beauty brand called 'Danessa Myricks Beauty' in 2015. Her brand is centered around
+                            inclusivity and innovation. Since she has launched she has consistently sold out many of
+                            her products worldwide and continues to inspire men and women across all ages that her brand is 
+                            more than just makeup, it's about empowering individuals to express themselves creatively and confidently.
+                        </p>
+                </section> 
+            </section>
+            <section id="part2">
+                <h2>Top Sellers</h2>
+                <section id="top1" class="Itemcurrent">
+                    <img src="blurringbalm.webp" alt="image of blurring balm product" width="600" height="400">
+                        <h3>Yummy Skin Blurring Balm Powder Universal</h3>
+                            <p>
+                                A skin balancing priming superstar! This never-before-seen weightless 
+                                balm to powder formula creates a blurring, skin-refining barrier that 
+                                enhances the application of any foundation.
+                            </p>
+                </section>
+                <section id="top2" class="Itemhidden">
+                    <img src="colorfix.webp" alt="image of colorfix product" width="600" height="400">
+                        <h3>Colorfix Mattes</h3>
+                            <p>
+                                An award-winning multi-use, long-lasting, waterproof and buildable high 
+                                pigment color, featuring matte, neutrals, bold colors, and pastels. 
+                                Use it as a base/primer or a stand alone shade.
+                            </p>
+                </section>
+                <section id="top3" class="Itemhidden">
+                    <img src="skintint.jpg" alt="image of skin tint product" width="600" height="400">
+                        <h3>Yummy Skin Serum Skin Tint Foundation With Peptides and Ceramide</h3>
+                            <p>
+                                A skin-loving tint packed with Peptides and Ceramides for a boost of
+                                hydration, seamless coverage, and a fresh, radiant glow.
+                            </p>
+                </section>            
+                <section id="switchbtn">
+                    <button id="top1" class="bttn" target="p1">Blurring Balm</button>
+                    <button id="top2" class= "bttn" target="p2">Colorfix Mattes</button>
+                    <button id="top3" class="bttn" target ="p3">Skin Tint</button>
+                </section>            
+            </section>
+            <section id="part3">
+                <h2>Shop more of Danessa Myricks Beauty</h2>
+                    <section id="products">
+                        <section id="sell1">
+                            <img src="settingspay.jpg" alt="Setting spray picture" width="200" height="200">
+                            <h4>Yummy Skin Liquid Blurring Balm Setting Spray</h4>
+                                <p>$35.99</p>
+                                <button id="prod1">Add to Cart</button>
+                        </section>
+                        <section id="sell2">
+                            <img src="yummyskinwaterserum.webp" alt="water serum picture" width="200" height="200">
+                            <h4>Yummy Skin Water Powder Serum</h4>
+                                <p>$38.99</p>
+                                <button id="prod2">Add to Cart</button>
+                        </section>
+                        <section id="sell3">
+                            <img src="powder.webp" alt="powder picture" width="200" height="200">
+                            <h4>Yummy Skin Blurring Balm Powder Flushed</h4>
+                                <p>$26.99</p>
+                                <button id="prod3">Add to Cart</button>
+                        </section>
+                    </section>
+                    <section id="total">
+                        <h3>Cart</h3>
+                        <ul id="itemlist">
+                            <li>Your Cart is Empty</li>
+                        </ul>
+                        <ul>
+                            <li id="subtotal">Subtotal: <span>$0.00</span></li>
+                            <li id="tax">Tax: <span>$0.00</span></li>
+                            <li id="shipping">Shipping <span>$0.00</span></li>
+                            <li id="finaltotal">Total: <span>$0.00</span></li>
+                        </ul>
+                        <button id="check">Checkout</button>
+                    </section>
+            </section>
+            <section id="part4">
+                <section id="game1">
+                <h2>In or Out?</h2>
+                <form id="gameform">
+                    <label for="numGame">Pick a number between 1 and 10</label><br>
+                    <span class="message">Please pick a number between 1 and 10</span>
+                    <input type="number" name="numGame" id="numGame"><br>
+                    <input type="submit" name="guessNum" id="guessNum" value="In or Out!">
+                </form>
+                <section id="gameDisplay">
+                    <h3>In or Out!</h3> 
+                        <p> Enter a number between 1 and 10 in the box to the 
+                            left and click the button to see if your number is 
+                            In or Out of season. If your number matcher, you win!
+                        </p>
+                        <p id="GameOutput">
+                            This is where the random number and user guess 
+                            would display along with if they won or not.
+                        </p>
+                </section>
+            </section>
+            </section>
+          <section id="part5">
+            <div id="contactpic">
+                <img src="danessaandmodels.jpg" alt="Danessa with 3 models" width="774px" height="1112px">
+            </div>
+            <section id="part5ish">
+                <h2>Contact Us</h2>
+                    <p>
+                        Feel free to say hello! Our team loves to hear straight from the customer!
+                    </p>
+                <form>
+                    <label for="fname">First Name:</label><br>
+                    <input type="text" id="fname" name="fname" value=""><br>
+                    <label for="lname">Last Name:</label><br>
+                    <input type="text" id="lname" name="lname" value=""><br>
+                    <label for="message">Let us know what you think!</label><br>
+                    <textarea id="message" name="message"></textarea><br>
+                    <button id="formbtn">Submit</button>
+                </form>
+            </section>
+          </section>
+        </main>
+        <script src="script.js" async></script>
+    </body>     
+    <footer>
+        <p>
+            Copyright &copy; 2026 Oyinlola Haastrup's Work. All rights reserved.
+        </p>
+    </footer>
+</html>
